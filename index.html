@@ -1,151 +1,371 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Best Online food website | MyOnlineMeal.com</title>
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-
-    <!-- CSS Styling -->
-    <link rel="stylesheet" href="css/styles.css" />
-  </head>
-  <body>
-    <!-- Header -->
-    <header>
-      <nav id="navbar">
-        <div id="logo">
-          <img src="logo.jpg" alt="MyOnlineMeal.com" />
-        </div>
-        <ul>
-          <li class="item"><a href="#">Home</a></li>
-          <li class="item"><a href="#">Services</a></li>
-          <li class="item"><a href="#">About Us</a></li>
-          <li class="item"><a href="#">Contact Us</a></li>
-        </ul>
-      </nav>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodExpress | Fast Food Delivery</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/phone.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#">
+                    <i class="fas fa-utensils"></i>
+                    <span>FoodExpress</span>
+                </a>
+            </div>
+            
+            <div class="nav-links">
+                <a href="#home" class="nav-link active"><i class="fas fa-home"></i> Home</a>
+                <a href="#menu" class="nav-link"><i class="fas fa-burger"></i> Menu</a>
+                <a href="#restaurants" class="nav-link"><i class="fas fa-store"></i> Restaurants</a>
+                <a href="#deals" class="nav-link"><i class="fas fa-tag"></i> Deals</a>
+                <a href="#track" class="nav-link"><i class="fas fa-map-marker-alt"></i> Track Order</a>
+            </div>
+            
+            <div class="nav-actions">
+                <button class="btn-login"><i class="fas fa-user"></i> Login</button>
+                <button class="btn-cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">3</span>
+                </button>
+                <button class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
     </header>
 
-    <!-- Section -->
-    <section>
-      <div id="home">
-        <h1 class="h-primary">Welcome to OnlineMeal.com</h1>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur
-          nesciunt ipsum iure repellat nostrum unde iste reiciendis tempora
-        </p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-        <button class="btn">Order Now</button>
-      </div>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Craving something delicious? <span class="highlight">We deliver!</span></h1>
+            <p class="subtitle">Get your favorite food delivered in under 30 minutes</p>
+            
+            <div class="search-container">
+                <div class="search-box">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <input type="text" placeholder="Enter your delivery address">
+                    <button class="btn-search">Find Food</button>
+                </div>
+                <p class="search-hint"><i class="fas fa-bolt"></i> Popular searches: Pizza, Burger, Sushi, Chinese</p>
+            </div>
+            
+            <div class="hero-stats">
+                <div class="stat">
+                    <h3>15,000+</h3>
+                    <p>Restaurants</p>
+                </div>
+                <div class="stat">
+                    <h3>500,000+</h3>
+                    <p>Happy Customers</p>
+                </div>
+                <div class="stat">
+                    <h3>98%</h3>
+                    <p>On-time Delivery</p>
+                </div>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Delicious Food">
+        </div>
     </section>
 
-    <section class="services-container">
-      <h1 class="h-primary center">Our Services</h1>
-      <div id="services">
-        <div class="box">
-          <img src="img/pizza.png" alt="" />
-          <h2 class="h-secondary center">Food Ordering</h2>
-          <p class="center">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque ea
-            corporis, ab earum maiores delectus nostrum accusamus laborum fugiat
-            molestias quasi quaerat perferendis vitae ex id vel laudantium
-            molestiae. Recusandae.
-          </p>
+    <!-- Features Section -->
+    <section class="features">
+        <div class="section-header">
+            <h2>Why Choose FoodExpress?</h2>
+            <p>We make food delivery fast, easy, and reliable</p>
         </div>
-        <div class="box">
-          <img src="img/biryani.png" alt="" />
-          <h2 class="h-secondary center">Food Catering</h2>
-          <p class="center">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque ea
-            corporis, ab earum maiores delectus nostrum accusamus laborum fugiat
-            molestias quasi quaerat perferendis vitae ex id vel laudantium
-            molestiae. Recusandae.
-          </p>
+        
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-bolt"></i>
+                </div>
+                <h3>Fast Delivery</h3>
+                <p>Average delivery time: 25 minutes</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3>Safe Delivery</h3>
+                <p>Contactless delivery options available</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-percent"></i>
+                </div>
+                <h3>Best Deals</h3>
+                <p>Up to 50% off on your first order</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-headset"></i>
+                </div>
+                <h3>24/7 Support</h3>
+                <p>We're here to help anytime</p>
+            </div>
         </div>
-        <div class="box">
-          <img src="img/delivery-boy.png" alt="" />
-          <h2 class="h-secondary center">Bulk Ordering</h2>
-          <p class="center">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque ea
-            corporis, ab earum maiores delectus nostrum accusamus laborum fugiat
-            molestias quasi quaerat perferendis vitae ex id vel laudantium
-            molestiae. Recusandae.
-          </p>
-        </div>
-      </div>
     </section>
-    <hr />
-    <section id="client-section">
-      <h1 class="h-primary center">Our Clients</h1>
-      <div id="client">
-        <div class="client-item">
-          <img src="img/iphone.png" alt="our client" />
+
+    <!-- Popular Restaurants -->
+    <section class="restaurants" id="restaurants">
+        <div class="section-header">
+            <h2>Popular Restaurants Near You</h2>
+            <p>Discover top-rated eateries in your area</p>
         </div>
-        <div class="client-item">
-          <img src="img/hp.png" alt="our client" />
+        
+        <div class="restaurants-grid">
+            <div class="restaurant-card">
+                <div class="restaurant-badge">20% OFF</div>
+                <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Italian Restaurant">
+                <div class="restaurant-info">
+                    <div class="restaurant-header">
+                        <h3>Mario's Italian</h3>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.5</span>
+                        </div>
+                    </div>
+                    <p class="cuisine">Italian • Pizza • Pasta</p>
+                    <div class="restaurant-footer">
+                        <span class="delivery-time"><i class="fas fa-clock"></i> 20-30 min</span>
+                        <span class="delivery-fee"><i class="fas fa-biking"></i> $2.99</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="restaurant-card">
+                <div class="restaurant-badge new">NEW</div>
+                <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Burger Place">
+                <div class="restaurant-info">
+                    <div class="restaurant-header">
+                        <h3>Burger Hub</h3>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.7</span>
+                        </div>
+                    </div>
+                    <p class="cuisine">American • Burgers • Fries</p>
+                    <div class="restaurant-footer">
+                        <span class="delivery-time"><i class="fas fa-clock"></i> 15-25 min</span>
+                        <span class="delivery-fee"><i class="fas fa-biking"></i> $1.99</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="restaurant-card">
+                <img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Sushi Restaurant">
+                <div class="restaurant-info">
+                    <div class="restaurant-header">
+                        <h3>Tokyo Sushi</h3>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.8</span>
+                        </div>
+                    </div>
+                    <p class="cuisine">Japanese • Sushi • Asian</p>
+                    <div class="restaurant-footer">
+                        <span class="delivery-time"><i class="fas fa-clock"></i> 30-40 min</span>
+                        <span class="delivery-fee"><i class="fas fa-biking"></i> $3.99</span>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="client-item">
-          <img src="img/microsoft.png" alt="our client" />
+        
+        <div class="view-all">
+            <button class="btn-view">View All Restaurants <i class="fas fa-arrow-right"></i></button>
         </div>
-        <div class="client-item">
-          <img src="img/skype.png" alt="our client" />
-        </div>
-      </div>
     </section>
-    <hr />
-    <section id="contact">
-      <h1 class="h-primary center">Contact Us</h1>
-      <div id="contact-box">
-        <form action="">
-          <div class="formgroup">
-            <label for="name">Name: </label>
-            <input
-              type="text"
-              name="name"
-              id="name"
-              placeholder="Enter your Name"
-            />
-          </div>
-          <div class="formgroup">
-            <label for="email">Email: </label>
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="Enter your Email"
-            />
-          </div>
-          <div class="formgroup">
-            <label for="phone">Phone No.: </label>
-            <input
-              type="phone"
-              name="phone"
-              id="phone"
-              placeholder="Enter your Phone"
-            />
-          </div>
-          <label for="message">Message: </label>
-          <div class="formgroup">
-            <textarea
-              name="message"
-              id="message"
-              cols="30"
-              rows="10"
-            ></textarea>
-          </div>
-        </form>
-      </div>
+
+    <!-- Food Categories -->
+    <section class="categories" id="menu">
+        <div class="section-header">
+            <h2>Browse by Category</h2>
+            <p>Find exactly what you're craving for</p>
+        </div>
+        
+        <div class="categories-grid">
+            <div class="category-card pizza">
+                <div class="category-content">
+                    <i class="fas fa-pizza-slice"></i>
+                    <h3>Pizza</h3>
+                    <p>100+ options</p>
+                </div>
+            </div>
+            
+            <div class="category-card burger">
+                <div class="category-content">
+                    <i class="fas fa-hamburger"></i>
+                    <h3>Burgers</h3>
+                    <p>80+ options</p>
+                </div>
+            </div>
+            
+            <div class="category-card asian">
+                <div class="category-content">
+                    <i class="fas fa-utensil-spoon"></i>
+                    <h3>Asian</h3>
+                    <p>150+ options</p>
+                </div>
+            </div>
+            
+            <div class="category-card dessert">
+                <div class="category-content">
+                    <i class="fas fa-ice-cream"></i>
+                    <h3>Desserts</h3>
+                    <p>60+ options</p>
+                </div>
+            </div>
+        </div>
     </section>
-    <hr />
-    <!-- Footer Section -->
-    <footer>
-      <div class="center">Copyright &copy; www.MyOnlineMeal.com</div>
+
+    <!-- Track Order Section -->
+    <section class="track-order" id="track">
+        <div class="track-content">
+            <h2>Track Your Order in Real-Time</h2>
+            <p>Know exactly when your food will arrive</p>
+            
+            <div class="track-steps">
+                <div class="track-step active">
+                    <div class="step-number">1</div>
+                    <p>Order Placed</p>
+                </div>
+                <div class="track-step">
+                    <div class="step-number">2</div>
+                    <p>Preparing</p>
+                </div>
+                <div class="track-step">
+                    <div class="step-number">3</div>
+                    <p>On the Way</p>
+                </div>
+                <div class="track-step">
+                    <div class="step-number">4</div>
+                    <p>Delivered</p>
+                </div>
+            </div>
+            
+            <div class="track-input">
+                <input type="text" placeholder="Enter your order ID">
+                <button class="btn-track">Track Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Deals Section -->
+    <section class="deals" id="deals">
+        <div class="section-header">
+            <h2>Today's Hot Deals</h2>
+            <p>Limited time offers - Order now!</p>
+        </div>
+        
+        <div class="deals-container">
+            <div class="deal-card">
+                <div class="deal-tag">HOT</div>
+                <div class="deal-content">
+                    <h3>50% OFF</h3>
+                    <p>On your first order</p>
+                    <button class="btn-deal">GRAB NOW</button>
+                </div>
+            </div>
+            
+            <div class="deal-card">
+                <div class="deal-tag">NEW</div>
+                <div class="deal-content">
+                    <h3>Free Delivery</h3>
+                    <p>On orders above $25</p>
+                    <button class="btn-deal">ORDER NOW</button>
+                </div>
+            </div>
+            
+            <div class="deal-card">
+                <div class="deal-tag">SAVE</div>
+                <div class="deal-content">
+                    <h3>Combo Deal</h3>
+                    <p>Burger + Fries + Drink = $12.99</p>
+                    <button class="btn-deal">BUY COMBO</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="logo">
+                    <a href="#">
+                        <i class="fas fa-utensils"></i>
+                        <span>FoodExpress</span>
+                    </a>
+                </div>
+                <p>Delivering happiness to your doorstep since 2020</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="#">About Us</a>
+                <a href="#">Careers</a>
+                <a href="#">Blog</a>
+                <a href="#">Press</a>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Support</h3>
+                <a href="#">Help Center</a>
+                <a href="#">Safety</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Download Our App</h3>
+                <p>Get the best experience on mobile</p>
+                <div class="app-download">
+                    <button class="btn-app">
+                        <i class="fab fa-apple"></i>
+                        <span>App Store</span>
+                    </button>
+                    <button class="btn-app">
+                        <i class="fab fa-google-play"></i>
+                        <span>Google Play</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 FoodExpress. All rights reserved.</p>
+            <div class="payment-methods">
+                <i class="fab fa-cc-visa"></i>
+                <i class="fab fa-cc-mastercard"></i>
+                <i class="fab fa-cc-paypal"></i>
+                <i class="fab fa-cc-apple-pay"></i>
+            </div>
+        </div>
     </footer>
-  </body>
+
+    <!-- Floating Action Button -->
+    <button class="fab">
+        <i class="fas fa-comment"></i>
+    </button>
+
+    <script src="index.js"></script>
+</body>
 </html>
