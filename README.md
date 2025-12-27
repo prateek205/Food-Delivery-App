@@ -19,7 +19,7 @@ This project focuses on layout design, responsiveness, and modern UI styling wit
 
 ## 📺 Live Demo
 
-URL: 
+URL: https://food-delivery-app-rho-ten.vercel.app/ 
 
 ## 📂 Project Structure
 
